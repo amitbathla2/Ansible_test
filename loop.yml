@@ -1,0 +1,12 @@
+---
+- name: test
+  hosts: localhost
+  connection: local
+  tasks:
+  - name: test loop in ansible
+    debug:
+      msg: "echo {{ item }} "
+    with_items:
+          - python
+          - sjk
+          - eng
